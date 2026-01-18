@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our AI Services | Fieldhouse Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1337ec",
+                        "background-light": "#ffffff",
+                        "surface-light": "#f8f9fa",
+                        "border-light": "#e9ecef",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .tech-card {
+            background-color: theme('colors.surface-light');
+            border: 1px solid theme('colors.border-light');
+            transition: all 0.3s ease;
+        }
+        .tech-card:hover {
+            border-color: theme('colors.primary');
+            transform: translateY(-2px);
+        }
+        .tech-logo-grayscale {
+            filter: grayscale(100%);
+            opacity: 0.5;
+            transition: all 0.3s ease;
+        }
+        .tech-logo-grayscale:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-background-light text-slate-900 min-h-screen">
+<header class="sticky top-0 z-50 w-full border-b border-solid border-border-light bg-white/80 backdrop-blur-md px-4 md:px-20 lg:px-40 py-3">
+<div class="max-w-[1200px] mx-auto flex items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 text-xl font-bold leading-tight tracking-tight">Fieldhouse Studio</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+<nav class="flex items-center gap-8">
+<a class="text-slate-600 hover:text-primary text-sm font-medium transition-colors" href="#">Services</a>
+<a class="text-slate-600 hover:text-primary text-sm font-medium transition-colors" href="#">Portfolio</a>
+<a class="text-slate-600 hover:text-primary text-sm font-medium transition-colors" href="#">About</a>
+<a class="text-slate-600 hover:text-primary text-sm font-medium transition-colors" href="#">Blog</a>
+</nav>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold transition-all hover:brightness-110">
+<span>Start a Project</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-4 md:px-10 lg:px-20">
+<section class="py-16 md:py-24">
+<div class="relative overflow-hidden rounded-2xl bg-cover bg-center p-8 md:p-16 flex flex-col items-center text-center gap-6" style="background-image: linear-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAjUBFcdPnQW7nKOxcOEWhn9I6DwZjk00w24WR6EZHCGZhmg56VoMoza5be0iyTZ2ZXGPZTIh7ZpKK5AwywKHJhCgG1J88wfBMK3qRHRkbOTs8_QRFjFXaAVeDuObiw2G56lHeUVmXKHivgv72C-AwpqVHcdAb9BB7bCUba6DEmSqOZJNXiW9PtdyehtH1wLSDX4dK6oo9KuPMbp7Rscl85evndYM07_v4Yk-YlEvNw5oOVmV02l4FwsZgjS4gOguKir8amSvGrWhY');">
+<div class="max-w-3xl flex flex-col gap-4">
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-xs">Innovation in Motion</span>
+<h1 class="text-slate-900 text-4xl md:text-6xl font-black leading-tight tracking-tight">
+                        Transforming Vision into <span class="text-primary">Intelligence</span>
+</h1>
+<p class="text-slate-600 text-lg md:text-xl font-normal max-w-2xl mx-auto">
+                        Fieldhouse Studio specializes in cutting-edge AI software development, helping you build the future of technology today with precision and scale.
+                    </p>
+</div>
+<div class="flex gap-4">
+<button class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:shadow-lg hover:shadow-primary/20 transition-all">Explore Offerings</button>
+<button class="bg-white text-slate-900 px-8 py-3 rounded-lg font-bold border border-slate-200 hover:bg-slate-50 transition-all">Our Process</button>
+</div>
+</div>
+</section>
+<section class="py-10">
+<div class="flex flex-col gap-4 mb-12">
+<h2 class="text-slate-900 tracking-tight text-3xl md:text-4xl font-bold">Technical Offerings</h2>
+<p class="text-slate-500 text-lg max-w-2xl">
+                    Expert solutions tailored to your business needs, from strategic planning to enterprise-grade implementation.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="tech-card p-8 rounded-xl flex flex-col gap-6 group">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl font-light">lightbulb</span>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="text-slate-900 text-xl font-bold">AI Strategy Consulting</h3>
+<p class="text-slate-600 leading-relaxed text-sm">
+                            Roadmap development, ROI analysis, and feasibility studies to align artificial intelligence with your core business objectives.
+                        </p>
+<ul class="mt-4 space-y-2 text-sm text-slate-500">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Tech stack evaluation</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Ethics &amp; compliance audit</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Implementation roadmapping</li>
+</ul>
+</div>
+</div>
+<div class="tech-card p-8 rounded-xl flex flex-col gap-6 group border-primary/20">
+<div class="w-14 h-14 rounded-lg bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-4xl font-light">psychology</span>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="text-slate-900 text-xl font-bold">Custom Model Development</h3>
+<p class="text-slate-600 leading-relaxed text-sm">
+                            LLM fine-tuning, computer vision systems, and predictive analytics built from the ground up for your specific proprietary use cases.
+                        </p>
+<ul class="mt-4 space-y-2 text-sm text-slate-500">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Fine-tuned Llama &amp; GPT</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Computer Vision (YOLO/R-CNN)</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Custom RAG Pipelines</li>
+</ul>
+</div>
+</div>
+<div class="tech-card p-8 rounded-xl flex flex-col gap-6 group">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl font-light">database</span>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="text-slate-900 text-xl font-bold">Data Engineering</h3>
+<p class="text-slate-600 leading-relaxed text-sm">
+                            Robust pipeline construction, automated data cleaning, and scalable vector infrastructure to power your production AI models.
+                        </p>
+<ul class="mt-4 space-y-2 text-sm text-slate-500">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> ETL/ELT Orchestration</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Vector Database Setup</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-xs">check_circle</span> Real-time Streaming Data</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white">
+<div class="text-center mb-12">
+<h2 class="text-slate-900 text-2xl font-bold mb-2">Our Arsenal</h2>
+<p class="text-slate-500">Industry-leading tools and frameworks we leverage every day.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center">
+<div class="flex flex-col items-center gap-3">
+<img alt="PyTorch" class="h-8 tech-logo-grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2HyWFnFdgl4I6rqXwhjFunzGJK78re10ewtyIRAG3icctlhyfXWGKsqpCnsUk3X5GYCOxIRJ9n6aPNO6NsN0htMiyUOHYBggRI8_kNRL8H5ias3lIVaqsQGf_VdX4e2P7oq8eOZikjwFD1MyQeoVLWeGPh_3fVq9R0wzWeaMvJ1hKPTCkt3htlpmgNV7xrC-3wyzX4rksFRABE--zsQqML8R7V1BxZ-tbwNJHLsblYNvOrmeP_-vKAfkWQDKfy7wQBbDLPy9Ogrk"/>
+<span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">PyTorch</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<img alt="TensorFlow" class="h-8 tech-logo-grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHHqvQwwq1VebRlT4Fg6xV2GmUtO7BlTNe0lNe_Ah8JeSE9zsz40BZ6gdbh1YDBEczP-ANJQ18raqtPlv4ZnibLntOe7ozed669M9LUuzqVn9G9crrw3ZipAnAsCiLhnGzuCvgXmBi1ThG8LEZb6OwrWZcya72KRB5jS4LwhSegkiUztjNo6ER99_XbMA8P9P8nwHQ6d224hou0eBLXy79SunfrEwm3VHLWgCn5j-knBKkGCq2ymWdB7FLifFoixtKSlNXzNrj0hk"/>
+<span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">TensorFlow</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<img alt="OpenAI" class="h-8 tech-logo-grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxyAmU8CQntrWCyd56uZKKzuM49JsYzcfLDmqlgNf--MiPiaqN6-SDPDNZ8UJLR-iLtru8t4XtIVT3Q5U0X02gAWHRMI1aQJApfFbotjooPscTgoGUHQolgT9HaK8c-FkDpmRhr6D7zbUNgRCs_IJcYmRuF_cHN4W8bN9WhX08JJSwDG7ULeIuH3Dkw7-KjqUn_HHOMRApjiZW-gTGoZi0QW6u0lMDc9AkqAHY4TjJFlEmwR3zNaKoQQ4oO_KbPzHyHU1VpQ4Vleo"/>
+<span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">OpenAI</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<img alt="AWS" class="h-8 tech-logo-grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0fgv4qNhJQ9bJz9z4w74K3n1qSi_YXYlnTSIIjS0ULsYksLUksafQc9n9zTvACFX2GFlLK8M2EK_qge6CqODMXdNg57u0WO0MTRbrYZ2dG_tI6odJO0tht4_2yNyHZflP5aQkq7DPp4Inm8IudQ8H17N_EGlw57ND1Rnt3j2c48CRW46ZClK4Eox0ngqGQET2mMntuWT3H-YT4iOoiQBNZk68jQ5AOCjwaUSY7kLOiwjxN2-NkzG4dILtMG6tZZl84r0grjlipxk"/>
+<span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">AWS Cloud</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<img alt="Hugging Face" class="h-8 tech-logo-grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvfYPJIYzxbuDVCqL_9tENfxw-HxgChb5A_AoGnn1_sfJFMV9-Bh8uruHIFs2Oj-waNyUiBaCONqF4_OWc86V-dc-M7jklBPJ2Tcm_q7H7EBAdHr8IgBYwtxZdlGT6Eo2aw8V1G9hq3vouegixgDLUNOWLGqiETy3_QOwdLQPGU25uJtuyHQeNGQHrnaRqqI5XAkT4hyOzNUiWgri1wkmny6rQysoY8npwrDSblv-JGlUIJwuhGLK6dkaeXSPSrBypF9EwL97QlyI"/>
+<span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Hugging Face</span>
+</div>
+</div>
+</section>
+<section class="mb-20">
+<div class="bg-primary rounded-3xl p-10 md:p-16 text-center flex flex-col items-center gap-6 relative overflow-hidden shadow-2xl shadow-primary/30">
+<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 20% 50%, white 0%, transparent 50%);"></div>
+<h2 class="text-white text-3xl md:text-5xl font-bold max-w-2xl relative z-10">Ready to build the future of your business?</h2>
+<p class="text-white/80 text-lg max-w-xl relative z-10">Contact our engineering team today to discuss your AI requirements and receive a detailed roadmap.</p>
+<button class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition-all transform hover:scale-105 relative z-10 shadow-lg">
+                    Start a Project
+                </button>
+</div>
+</section>
+</main>
+<footer class="bg-white py-16 px-4 border-t border-border-light">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2 flex flex-col gap-6">
+<div class="flex items-center gap-2 text-slate-900">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 text-lg font-bold">Fieldhouse Studio</h2>
+</div>
+<p class="text-slate-500 max-w-sm text-sm leading-relaxed">
+                    A boutique AI software development studio focused on delivering high-impact, scalable machine learning solutions for modern enterprises.
+                </p>
+</div>
+<div class="flex flex-col gap-5">
+<h4 class="text-slate-900 font-bold uppercase tracking-widest text-[10px]">Quick Links</h4>
+<nav class="flex flex-col gap-3">
+<a class="text-slate-500 text-sm hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-slate-500 text-sm hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-slate-500 text-sm hover:text-primary transition-colors" href="#">Case Studies</a>
+<a class="text-slate-500 text-sm hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex flex-col gap-5">
+<h4 class="text-slate-900 font-bold uppercase tracking-widest text-[10px]">Connect</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">mail</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">group</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-16 pt-8 border-t border-border-light text-center">
+<p class="text-slate-400 text-xs">© 2024 Fieldhouse Studio. All rights reserved. Built for the intelligence age.</p>
+</div>
+</footer>
+
+</body></html>

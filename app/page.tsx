@@ -1,25 +1,22 @@
 'use client';
 
 import Hero from './components/Hero';
-import FeaturedServices from './components/FeaturedServices';
-import WhyChooseUs from './components/WhyChooseUs';
-import FeaturedProjects from './components/FeaturedProjects';
-import ProcessSection from './components/ProcessSection';
-import StatsSection from './components/StatsSection';
-import CallToAction from './components/CallToAction';
+import FeaturesSection from './components/FeaturesSection';
+import CoreServicesSection from './components/CoreServicesSection';
+import PartnersSection from './components/PartnersSection';
+import Footer from './components/Footer';
 
 export default function HomePage() {
   return (
-    <>
-      <main>
+    <div className="relative min-h-screen flex flex-col">
+      <div className="absolute inset-0 grid-pattern pointer-events-none -z-10"></div>
+      <main className="flex-1">
         <Hero />
-        <FeaturedServices />
-        <WhyChooseUs />
-        <FeaturedProjects />
-        <ProcessSection />
-        <StatsSection />
-        <CallToAction />
+        <FeaturesSection />
+        <CoreServicesSection />
+        <PartnersSection />
       </main>
-    </>
+      <Footer />
+    </div>
   );
 }

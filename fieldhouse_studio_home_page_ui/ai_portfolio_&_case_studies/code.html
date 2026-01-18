@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Portfolio &amp; Case Studies | Fieldhouse Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1337ec",
+                        "background-light": "#fdfdfe",
+                        "card-bg": "rgba(255, 255, 255, 0.7)",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer components {
+            .glass-card {
+                background: rgba(255, 255, 255, 0.6);
+                backdrop-filter: blur(12px);
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.05);
+                transition: all 0.3s ease;
+            }
+            .glass-card:hover {
+                background: rgba(255, 255, 255, 0.8);
+                border-color: rgba(19, 55, 236, 0.2);
+                transform: translateY(-4px);
+                box-shadow: 0 20px 40px -15px rgba(19, 55, 236, 0.12);
+            }
+            body {
+                font-family: 'Space Grotesk', sans-serif;
+                background-color: #fdfdfe;
+            }
+        }
+    </style>
+</head>
+<body class="text-slate-900 min-h-screen">
+<header class="sticky top-0 z-50 w-full border-b border-slate-200/60 bg-white/70 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-slate-900">Fieldhouse Studio</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-semibold text-primary" href="#">Portfolio</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#">About</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">search</span>
+<input class="w-64 h-10 pl-10 pr-4 rounded-lg bg-slate-100 border-none focus:ring-2 focus:ring-primary/20 text-sm transition-all placeholder:text-slate-400" placeholder="Search case studies..."/>
+</div>
+<button class="bg-primary hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                Get Started
+            </button>
+</div>
+</div>
+</header>
+<main>
+<section class="relative py-24 px-6 overflow-hidden bg-slate-50/50">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-30 pointer-events-none">
+<div class="absolute top-[-20%] left-[-10%] w-[50%] h-[80%] rounded-full bg-blue-100 blur-[120px]"></div>
+<div class="absolute bottom-[-20%] right-[-10%] w-[40%] h-[70%] rounded-full bg-indigo-100 blur-[100px]"></div>
+</div>
+<div class="max-w-4xl mx-auto text-center">
+<h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-tight text-slate-900">
+                Engineering the <span class="text-primary">Future of AI</span>
+</h1>
+<p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+                A delivery-focused showcase of our technical excellence in building complex, production-ready AI software systems.
+            </p>
+<div class="flex items-center justify-center gap-4">
+<div class="flex -space-x-3 overflow-hidden">
+<img alt="team member" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALr4ztGlxN9wJAgtzcYEik1NMbMoxN2meSdn8NjGNJj3awGtr5_gN3RKM8CO7m_IKLKQsZfR-gCSeC84J1XSu8GgeRPn29JcwhtOUKSwmck-GA7pLHg9k3xzBSAezPUrA1i7WFlodLmGZzbN6DRT795QGyPPmdHMV_8Z1N8eC2HXeWJRjirJrZ17YlhvGbitMUm4eYKwM3dDmq9EUWrPh7GCF4yvzQPemJ6EN3c6p_MOQ6M1756CxuSG21uvguMHgBMCPjUjnw-SA"/>
+<img alt="team member" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM8yuYtSy77Co8ZX0ZeTdgN2hbLP8OMbOcZfxC_M0m_n-pQh_B79YIvf6WVo11HGxcYo9GlbafoNUpvW0kpeI3ZFgcvZOC7BjiIPBXGc6CKyDf4wIvtQMi3a1O9biCfKg_UJ6Eety6emyuo7kqc7QmpOd12d5Vr8461Ut7KPsRBxHR2luQNamdataQs9rncVQUtUhejXKrMMAt2m5hhTI81OeMxlEL_-JH8Yzr49xj26htXW7TuxWpsxu7JM7RDzS4cjfOqtU077w"/>
+<img alt="team member" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD43Cum8F2-bwRtTqQNB48KC2xtfbWkw8Oi8LlbEYRwRlky0CXA53Zt9Bk3ZsNo_Fik0gH8nbrLWLuudeNLkigsLf4WIrkfmfrXsvaJ_Si5yQAViksdWPNk7tsBTm3Z5q6XKsEFv4XqD--d3GP-G7A3nBbvRNhIBbR9vAN3PMcx44DfHkpkYFMHn2H-h2h8pJRhR5dKDnG0jgkOvm7EBl4kBT0ES1R8ZfG66uVXmOyalH9R9MB1dB8TVwvo7BLbJjWsHfA3-NehW0"/>
+</div>
+<span class="text-sm font-semibold text-slate-500">Trusted by 50+ Enterprises</span>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-6 py-20">
+<div class="flex flex-col lg:flex-row gap-12">
+<aside class="w-full lg:w-64 flex-shrink-0">
+<div class="sticky top-32 space-y-8">
+<div>
+<h3 class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 flex items-center gap-2">
+                            Industry Filters
+                        </h3>
+<div class="space-y-1.5">
+<button class="w-full flex items-center justify-between px-4 py-2.5 rounded-lg bg-primary text-white text-sm font-bold shadow-md shadow-primary/20">
+<span>All Industries</span>
+<span class="material-symbols-outlined text-sm">check</span>
+</button>
+<button class="w-full flex items-center gap-3 px-4 py-2.5 rounded-lg hover:bg-slate-100 text-slate-600 hover:text-slate-900 text-sm font-medium transition-all group">
+<span class="material-symbols-outlined text-xl text-slate-400 group-hover:text-primary transition-colors">medical_services</span>
+<span>Healthcare</span>
+</button>
+<button class="w-full flex items-center gap-3 px-4 py-2.5 rounded-lg hover:bg-slate-100 text-slate-600 hover:text-slate-900 text-sm font-medium transition-all group">
+<span class="material-symbols-outlined text-xl text-slate-400 group-hover:text-primary transition-colors">payments</span>
+<span>Finance</span>
+</button>
+<button class="w-full flex items-center gap-3 px-4 py-2.5 rounded-lg hover:bg-slate-100 text-slate-600 hover:text-slate-900 text-sm font-medium transition-all group">
+<span class="material-symbols-outlined text-xl text-slate-400 group-hover:text-primary transition-colors">cloud</span>
+<span>SaaS</span>
+</button>
+<button class="w-full flex items-center gap-3 px-4 py-2.5 rounded-lg hover:bg-slate-100 text-slate-600 hover:text-slate-900 text-sm font-medium transition-all group">
+<span class="material-symbols-outlined text-xl text-slate-400 group-hover:text-primary transition-colors">local_shipping</span>
+<span>Logistics</span>
+</button>
+<button class="w-full flex items-center gap-3 px-4 py-2.5 rounded-lg hover:bg-slate-100 text-slate-600 hover:text-slate-900 text-sm font-medium transition-all group">
+<span class="material-symbols-outlined text-xl text-slate-400 group-hover:text-primary transition-colors">psychology</span>
+<span>Generative AI</span>
+</button>
+</div>
+</div>
+<div class="p-6 rounded-2xl border border-slate-200 bg-white shadow-sm">
+<h4 class="font-bold text-slate-900 mb-2">Custom AI Solutions</h4>
+<p class="text-sm text-slate-500 mb-4 leading-relaxed">Ready to transform your business with custom AI development?</p>
+<button class="w-full py-2.5 bg-slate-900 text-white rounded-lg text-xs font-bold uppercase tracking-wider hover:bg-slate-800 transition-all">Start Project</button>
+</div>
+</div>
+</aside>
+<div class="flex-1">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold text-slate-900">Featured Case Studies</h2>
+<span class="text-sm font-medium text-slate-400 bg-slate-100 px-3 py-1 rounded-full">12 Case Studies</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="glass-card flex flex-col rounded-2xl overflow-hidden group">
+<div class="relative aspect-video overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent z-10 opacity-60"></div>
+<div class="absolute top-4 left-4 z-20">
+<span class="bg-white/90 backdrop-blur-md text-slate-900 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-sm">SaaS</span>
+</div>
+<div class="absolute bottom-4 left-4 z-20">
+<span class="flex items-center gap-1.5 text-xs font-bold text-white drop-shadow-sm">
+<span class="size-2 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.8)]"></span>
+                                    92% Accuracy achieved
+                                </span>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1Th9bu8d9pX8LdLJ-CpVndTY_XvHTZ8iIbOMbQiKnuz4tOEHd67eJI3EfkgO93dqhbaUks_PeXaNUz6EQ_XfnttyHLMX-Vp_AVaYJF2f-5IZ6MAwT6MPiY69DeOxEOWQ_jDDfFwGjFigQqOIxePQRBIG3CS7mX1PU2MPEaWw-8p8ZTuiQCZsL1BzOAEnGQRUxvpjWv_n8dkUBlXe70z9gzeF-PVrep6io8zCcGRfW5d13RRvKxIT_A2xBbeQPHIDMTqgJoelF12I');"></div>
+</div>
+<div class="p-6 flex flex-col flex-1 bg-white/40">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors text-slate-900">Predictive Analytics for Global SaaS</h3>
+<p class="text-slate-600 text-sm leading-relaxed mb-6">Implementing real-time churn prediction models using deep learning to identify at-risk customers with precision.</p>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex gap-2">
+<span class="text-[10px] bg-slate-100 px-2 py-1 rounded font-bold text-slate-500 uppercase tracking-tighter">PyTorch</span>
+<span class="text-[10px] bg-slate-100 px-2 py-1 rounded font-bold text-slate-500 uppercase tracking-tighter">LLMs</span>
+</div>
+<a class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all" href="#">
+                                    View Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="glass-card flex flex-col rounded-2xl overflow-hidden group">
+<div class="relative aspect-video overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent z-10 opacity-60"></div>
+<div class="absolute top-4 left-4 z-20">
+<span class="bg-white/90 backdrop-blur-md text-slate-900 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-sm">Healthcare</span>
+</div>
+<div class="absolute bottom-4 left-4 z-20">
+<span class="flex items-center gap-1.5 text-xs font-bold text-white drop-shadow-sm">
+<span class="size-2 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.8)]"></span>
+                                    HIPAA Compliant
+                                </span>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLdpuJxFvjo3LThTXC7Mj_2vrTGi-7MSz-3Jn3YPEWiA5cl1mlugpPu1iHJBH0rJ8sHCPT6DW9f9ntLnDfBHtMG-QQNjVj6b4Wi1A16PNpXR522Gp93ZUelka4cb82vcE-PfA2xWNAZJ4UhC-3muFUV47hH4z-oSi8_XuW_13m14z516GYMQF2sp-AlyrR_4gPoPO4XkkQ1E6UHehI8UyW6-9YPPiQSjrL0ksFNd3pCpcDM7QwDP0TEIwCThKuqK4DmFnwz-1dUgQ');"></div>
+</div>
+<div class="p-6 flex flex-col flex-1 bg-white/40">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors text-slate-900">AI-Driven Health Diagnostics</h3>
+<p class="text-slate-600 text-sm leading-relaxed mb-6">Computer vision system for early disease detection using private cloud infrastructure to ensure 100% patient data security.</p>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex gap-2">
+<span class="text-[10px] bg-slate-100 px-2 py-1 rounded font-bold text-slate-500 uppercase tracking-tighter">OpenCV</span>
+<span class="text-[10px] bg-slate-100 px-2 py-1 rounded font-bold text-slate-500 uppercase tracking-tighter">Python</span>
+</div>
+<a class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all" href="#">
+                                    View Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="glass-card flex flex-col rounded-2xl overflow-hidden group">
+<div class="relative aspect-video overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent z-10 opacity-60"></div>
+<div class="absolute top-4 left-4 z-20">
+<span class="bg-white/90 backdrop-blur-md text-slate-900 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-sm">Finance</span>
+</div>
+<div class="absolute bottom-4 left-4 z-20">
+<span class="flex items-center gap-1.5 text-xs font-bold text-white drop-shadow-sm">
+<span class="size-2 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.8)]"></span>
+                                    40% Loss reduction
+                                </span>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA0s5yCASqp_cyWIpg2yRCtaLEx8VMOZdheRgHKCABylSmKOZ008NH8V5qDBs1pTlNL5SMdidbvpxn0je3B7mj7GGXQm9sHtzKHodq5f6kQ3GNz-YgqcDIrlrA1nXrmwi_olovB0CGRx1gsjwIZqvAI53sV-6BT9NhJNGwQUEHeieTErwDIYHEZvkmAzwwQncWP-26Pr6b4ueqDpCFAezivWdQCdHBwlamDMzlIE2WFhkWbV9KWJioeabXAD6beVo6h6IHNcOmMa14');"></div>
+</div>
+<div class="p-6 flex flex-col flex-1 bg-white/40">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors text-slate-900">Fintech Risk Assessment</h3>
+<p class="text-slate-600 text-sm leading-relaxed mb-6">ML-based fraud detection engine processing millions of transactions per second to prevent identity theft and fraudulent transfers.</p>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex gap-2">
+<span class="text-[10px] bg-slate-100 px-2 py-1 rounded font-bold text-slate-500 uppercase tracking-tighter">AWS</span>
+<span class="text-[10px] bg-slate-100 px-2 py-1 rounded font-bold text-slate-500 uppercase tracking-tighter">Scikit-learn</span>
+</div>
+<a class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all" href="#">
+                                    View Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="glass-card flex flex-col rounded-2xl overflow-hidden group">
+<div class="relative aspect-video overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent z-10 opacity-60"></div>
+<div class="absolute top-4 left-4 z-20">
+<span class="bg-white/90 backdrop-blur-md text-slate-900 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-md shadow-sm">Generative AI</span>
+</div>
+<div class="absolute bottom-4 left-4 z-20">
+<span class="flex items-center gap-1.5 text-xs font-bold text-white drop-shadow-sm">
+<span class="size-2 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.8)]"></span>
+                                    Enterprise Scale
+                                </span>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxd1109-3Lx7OhJEe0TfjeMxt2A3_OryHbdgJPR3VjbN4HEDYrH3K6qPiI5mASEa1KYVk-ZfX1M6o5U-JHzckzR1cmrZ7oFrZmpIYwmKD-XtfgVk5sW_lVKVg7rnbyau70ZcxTnS6NVetFHpQvZpocxj-am_uWXz7u9-448V4KO0BmyEb-MZmxU4rd-9z2ibt9egJ2Ij94BqEKNRp8s33OncDq0m7qCg_JrP36tyiM8rCOrc-bUVvdhDdvN4DnLpoOcP1X-WkNOi0');"></div>
+</div>
+<div class="p-6 flex flex-col flex-1 bg-white/40">
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors text-slate-900">Enterprise Content Supply Chain</h3>
+<p class="text-slate-600 text-sm leading-relaxed mb-6">Large Language Model implementation for global marketing departments, automating content localization while maintaining brand voice.</p>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex gap-2">
+<span class="text-[10px] bg-slate-100 px-2 py-1 rounded font-bold text-slate-500 uppercase tracking-tighter">LangChain</span>
+<span class="text-[10px] bg-slate-100 px-2 py-1 rounded font-bold text-slate-500 uppercase tracking-tighter">OpenAI</span>
+</div>
+<a class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all" href="#">
+                                    View Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="border-t border-slate-200 bg-slate-50/30 py-16">
+<div class="max-w-7xl mx-auto px-6">
+<p class="text-center text-[10px] font-black uppercase tracking-[0.25em] text-slate-400 mb-12">Trusted by industry leaders</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-700">
+<div class="flex items-center gap-2 font-bold text-xl text-slate-700"><span class="material-symbols-outlined text-primary">rocket</span> TechCorp</div>
+<div class="flex items-center gap-2 font-bold text-xl text-slate-700"><span class="material-symbols-outlined text-primary">account_balance</span> BankFlow</div>
+<div class="flex items-center gap-2 font-bold text-xl text-slate-700"><span class="material-symbols-outlined text-primary">health_and_safety</span> Medisync</div>
+<div class="flex items-center gap-2 font-bold text-xl text-slate-700"><span class="material-symbols-outlined text-primary">inventory_2</span> LogiLink</div>
+<div class="flex items-center gap-2 font-bold text-xl text-slate-700"><span class="material-symbols-outlined text-primary">cloud_sync</span> SkyData</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 relative bg-slate-900 text-white overflow-hidden">
+<div class="absolute inset-0 bg-primary/10 -z-10"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="text-3xl md:text-5xl font-bold mb-8">Ready to build the future?</h2>
+<p class="text-slate-400 mb-10 max-w-xl mx-auto text-lg">Our team of specialized AI engineers is ready to help you scale your complex software needs with precision and reliability.</p>
+<button class="bg-primary hover:bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 transition-all transform hover:-translate-y-1">
+                Start Your Project
+            </button>
+<div class="mt-16 flex justify-center gap-8">
+<a class="text-slate-400 hover:text-white transition-colors font-medium" href="#">Twitter</a>
+<a class="text-slate-400 hover:text-white transition-colors font-medium" href="#">LinkedIn</a>
+<a class="text-slate-400 hover:text-white transition-colors font-medium" href="#">GitHub</a>
+</div>
+<p class="mt-12 text-slate-500 text-sm font-medium">© 2024 Fieldhouse Studio. All rights reserved.</p>
+</div>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-primary/20 blur-[120px] -z-1 rounded-full"></div>
+</section>
+</main>
+
+</body></html>

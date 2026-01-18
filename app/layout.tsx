@@ -1,13 +1,22 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({ 
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-space-grotesk"
+});
 
 export const metadata: Metadata = {
-  title: "Fieldhouse Studio - Digital Agency in London",
-  description: "Fieldhouse Studio is a full-service digital agency based in London, offering comprehensive digital solutions including web development, mobile apps, AR/VR, and more.",
+  title: "Fieldhouse Studio | Architecting the AI Future",
+  description: "We build production-ready AI solutions that scale. From custom LLMs to predictive analytics, we engineer the software that defines tomorrow.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -17,7 +26,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+      </head>
+      <body className={`${spaceGrotesk.variable} font-display antialiased`}>
         <Navbar />
         {children}
       </body>

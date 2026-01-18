@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fieldhouse Studio | Architecting the AI Future</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1337ec",
+                        "navy": "#0f172a",
+                        "background": "#ffffff",
+                        "surface": "#f8fafc",
+                        "accent-purple": "#8b5cf6",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background text-navy font-display;
+            }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grid-pattern {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+        }
+        .hero-gradient-light {
+            background: linear-gradient(135deg, rgba(19, 55, 236, 0.02) 0%, rgba(139, 92, 246, 0.02) 100%);
+        }
+    </style>
+</head>
+<body class="antialiased">
+<div class="relative min-h-screen flex flex-col">
+<div class="absolute inset-0 grid-pattern pointer-events-none -z-10"></div>
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg class="w-full h-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-xl font-bold tracking-tight uppercase text-navy">Fieldhouse Studio</span>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#">Process</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-navy hover:bg-slate-800 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-md">
+                    Work with Us
+                </button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative pt-12 pb-20 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl shadow-slate-200/50">
+<div class="absolute inset-0 hero-gradient-light"></div>
+<div class="relative flex flex-col lg:flex-row items-center gap-12 p-8 lg:p-24 min-h-[600px]">
+<div class="flex-1 space-y-8 z-10">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-bold uppercase tracking-widest">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                                Next-Gen Intelligence
+                            </div>
+<h1 class="text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tighter text-navy">
+                                Architecting the <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-purple">AI Future</span>
+</h1>
+<p class="text-lg lg:text-xl text-slate-600 max-w-xl leading-relaxed font-medium">
+                                We build production-ready AI solutions that scale. From custom LLMs to predictive analytics, we engineer the software that defines tomorrow.
+                            </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-base font-bold transition-all shadow-lg shadow-primary/20">
+                                    Launch Your Project
+                                </button>
+<button class="bg-white hover:bg-slate-50 border border-slate-200 text-navy px-8 py-4 rounded-xl text-base font-bold transition-all">
+                                    View Process
+                                </button>
+</div>
+</div>
+<div class="flex-1 relative w-full aspect-square max-w-[520px]">
+<div class="absolute inset-4 bg-primary/5 blur-3xl rounded-full"></div>
+<div class="relative w-full h-full rounded-3xl overflow-hidden border border-slate-200 shadow-2xl bg-white p-2">
+<img alt="Abstract neural network visualization" class="w-full h-full object-cover rounded-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjRBFFvnA6j6wqzxood7D_4lyRFi_lpfTs9AGS_I32ptBB00DcW7igsMqZnGsBTZmoDDfg6ZhXhRhEsCGAbeKbzj2vMMRg4ybpM-Ncqr2-F5dS5cDGeQZjgAbMn0G5QsBsu4keSvzcM49S8fc9ZKGDaUa9YcLc6T6DDsrJduWZI1xgYilfn7YN-JGKtSA7OuJ7Q9QuZBaRuauwKupcFaoVrcQCdK-MtSepEs9Bfkzk8nfEgXMLTn1n4PcEARNuwTGckudWQVnFclo"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 rounded-2xl p-8 border border-slate-100 bg-surface/50 hover:bg-white hover:shadow-xl hover:shadow-slate-200/60 transition-all duration-300">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">bolt</span>
+</div>
+<div>
+<p class="text-slate-500 text-xs font-bold uppercase tracking-widest mb-1">Performance</p>
+<p class="text-2xl font-bold tracking-tight text-navy">Cutting-Edge Latency</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-2xl p-8 border border-slate-100 bg-surface/50 hover:bg-white hover:shadow-xl hover:shadow-slate-200/60 transition-all duration-300">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">hub</span>
+</div>
+<div>
+<p class="text-slate-500 text-xs font-bold uppercase tracking-widest mb-1">Integration</p>
+<p class="text-2xl font-bold tracking-tight text-navy">Seamless Ecosystems</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-2xl p-8 border border-slate-100 bg-surface/50 hover:bg-white hover:shadow-xl hover:shadow-slate-200/60 transition-all duration-300">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">shield_lock</span>
+</div>
+<div>
+<p class="text-slate-500 text-xs font-bold uppercase tracking-widest mb-1">Security</p>
+<p class="text-2xl font-bold tracking-tight text-navy">Enterprise Hardened</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 relative">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col gap-4 mb-20 text-center items-center">
+<h2 class="text-primary text-sm font-bold uppercase tracking-[0.2em]">Capabilities</h2>
+<h2 class="text-4xl lg:text-5xl font-bold tracking-tight text-navy">Core AI Services</h2>
+<p class="text-slate-600 text-lg max-w-2xl font-medium">
+                        Specialized software development for the next generation of intelligence. We engineer AI solutions tailored for your specific industry.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group relative p-8 rounded-3xl bg-white border border-slate-200 hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 flex flex-col gap-8">
+<div class="size-16 rounded-2xl bg-slate-50 flex items-center justify-center text-navy group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
+<span class="material-symbols-outlined text-4xl">psychology</span>
+</div>
+<div class="space-y-4">
+<h3 class="text-2xl font-bold text-navy">Machine Learning</h3>
+<p class="text-slate-600 leading-relaxed font-medium">
+                                Custom predictive models and automated data pipelines designed to extract value from complex datasets.
+                            </p>
+</div>
+<ul class="mt-auto space-y-3 text-sm text-slate-500 font-semibold">
+<li class="flex items-center gap-3"><span class="size-1.5 rounded-full bg-primary"></span> Deep Learning</li>
+<li class="flex items-center gap-3"><span class="size-1.5 rounded-full bg-primary"></span> MLOps Automation</li>
+<li class="flex items-center gap-3"><span class="size-1.5 rounded-full bg-primary"></span> Data Engineering</li>
+</ul>
+</div>
+<div class="group relative p-8 rounded-3xl bg-white border border-slate-200 hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 flex flex-col gap-8">
+<div class="size-16 rounded-2xl bg-slate-50 flex items-center justify-center text-navy group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
+<span class="material-symbols-outlined text-4xl">auto_awesome</span>
+</div>
+<div class="space-y-4">
+<h3 class="text-2xl font-bold text-navy">Generative AI</h3>
+<p class="text-slate-600 leading-relaxed font-medium">
+                                Bespoke creative tools using Stable Diffusion, GANs, and multimodal architectures for unique needs.
+                            </p>
+</div>
+<ul class="mt-auto space-y-3 text-sm text-slate-500 font-semibold">
+<li class="flex items-center gap-3"><span class="size-1.5 rounded-full bg-primary"></span> Video Synthesis</li>
+<li class="flex items-center gap-3"><span class="size-1.5 rounded-full bg-primary"></span> Prompt Engineering</li>
+<li class="flex items-center gap-3"><span class="size-1.5 rounded-full bg-primary"></span> Creative Automation</li>
+</ul>
+</div>
+<div class="group relative p-8 rounded-3xl bg-white border border-slate-200 hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 flex flex-col gap-8">
+<div class="size-16 rounded-2xl bg-slate-50 flex items-center justify-center text-navy group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
+<span class="material-symbols-outlined text-4xl">database</span>
+</div>
+<div class="space-y-4">
+<h3 class="text-2xl font-bold text-navy">LLM Integration</h3>
+<p class="text-slate-600 leading-relaxed font-medium">
+                                Fine-tuning and deploying large language models with RAG for enterprise-grade precision and accuracy.
+                            </p>
+</div>
+<ul class="mt-auto space-y-3 text-sm text-slate-500 font-semibold">
+<li class="flex items-center gap-3"><span class="size-1.5 rounded-full bg-primary"></span> Vector Databases</li>
+<li class="flex items-center gap-3"><span class="size-1.5 rounded-full bg-primary"></span> Semantic Search</li>
+<li class="flex items-center gap-3"><span class="size-1.5 rounded-full bg-primary"></span> Model Fine-tuning</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 border-t border-slate-100 bg-surface/30">
+<div class="max-w-7xl mx-auto px-6 mb-12">
+<p class="text-center text-slate-400 uppercase tracking-[0.3em] text-xs font-bold">Global Innovation Partners</p>
+</div>
+<div class="flex overflow-x-auto pb-8 snap-x no-scrollbar">
+<div class="flex items-stretch px-6 gap-8 min-w-full">
+<div class="flex-none w-80 rounded-2xl bg-white border border-slate-200 p-6 space-y-5 shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="w-full aspect-video bg-slate-100 rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Corporate architecture" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCytu_N4Oxcuzl6zOO1q3VyQOYac9X_8zjJvmuKyHUL93TeSvGP_1FlJKoC75LOGTPJMwH-z_uPASPaOP6ieQ6eqcMvB3fM3mpt-C5QFbZC1uptbfj0qlO67iwkJ_1QgjyAvK8kjexnurY1815YKyekFmn7ZGgP4Hsk-kVrczuBMSxf3OUfAfeRaTOBo3VNypTLsSdLSmA49wfxJJ01K0RFN_aIijEPXDBZIUTplq6Ttt3cP6aqU8DNkU924pfNjHG7_6gVBMI8R1w"/>
+</div>
+<div>
+<p class="font-bold text-navy">NexTech Systems</p>
+<p class="text-xs text-slate-500 font-bold uppercase tracking-tight">Enterprise Solutions</p>
+</div>
+</div>
+<div class="flex-none w-80 rounded-2xl bg-white border border-slate-200 p-6 space-y-5 shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="w-full aspect-video bg-slate-100 rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Collaboration" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDQsQHMEsOFfUPCC5Ez4waRSjyS3zvudP6AlzO-rZeDRAemEOjbsIJGQCHlgv8V2_clIAI6pxMkq8eUCWQo3RcfbOXDjCJ0nzIhQFFf0YfE_O6YFX6ux25lXzn_sdMfmOhgn0UgPeWlX3J6TGQUo3Rafx-getrFdBBMJbEI-yl-LPNvdI5WQwCSSFq_0zy-CCB-5EwXB9Tsy3XlJf0RKetx-wNRpKKcWmbmNyuZqGubQ_6uKuMwR4RbiZ6z-o4YncxkZ60N_x5wRg"/>
+</div>
+<div>
+<p class="font-bold text-navy">Quantum Labs</p>
+<p class="text-xs text-slate-500 font-bold uppercase tracking-tight">AI Research</p>
+</div>
+</div>
+<div class="flex-none w-80 rounded-2xl bg-white border border-slate-200 p-6 space-y-5 shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="w-full aspect-video bg-slate-100 rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Visual data" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEFH_OTca7Nd-fX3qKKBzy9c8_TlvN7a5QVhcY9pbSoSNckqsr1q3Rv6eQXRDhr0Hq4IBv41RvR8OB-ez8pi8PTiMc_X4Dzlp3Ln80G1ex4zbojQCQkzlgKa6_9dwlb8jyU82BeSDUxFsRfwr0ulnLdbzuWh9jbfTHuobMzXVuOZw8B0q8ghZMPUC_69j39-TomRoo5wBFanI83SpdKgZo8iU97jCCFaPQRnuWBRWtBk4fXSmZZTaUNANfZVIfwk0Dabgva6C7yIc"/>
+</div>
+<div>
+<p class="font-bold text-navy">Aura Dynamics</p>
+<p class="text-xs text-slate-500 font-bold uppercase tracking-tight">Creative Automation</p>
+</div>
+</div>
+<div class="flex-none w-80 rounded-2xl bg-white border border-slate-200 p-6 space-y-5 shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="w-full aspect-video bg-slate-100 rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Modern workspace" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDag6BMmr13gbNExwjGV5t9qkP7uNRlNDAnILHftop1-nF0FGyzJclswXsfZjwS0M4lIDHM46PDtutk7RkKBH71-pbs2JrBzHM3BjHrykZp0n4HJxAa0wtX7lmOanDr8_bx1YUDaw6oFiyHYYxtNxvg8lFkrkKitZEDHT19LPGGTbKwOYb-ZEAEh-ABhbQPzDIp7Rc8aReZidkmdUXNS_KAl94iORJcWrDMR1I5ylEXF2SOvWc8cxvJBj5vU93_OtsNpJ_n9AZrte0"/>
+</div>
+<div>
+<p class="font-bold text-navy">Vortex Global</p>
+<p class="text-xs text-slate-500 font-bold uppercase tracking-tight">Logistics AI</p>
+</div>
+</div>
+<div class="flex-none w-80 rounded-2xl bg-white border border-slate-200 p-6 space-y-5 shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="w-full aspect-video bg-slate-100 rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Digital tech" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaih04GYQ9vXzgrk6MN1J11qxFBR4ULk-rK4fm_HodF3FZfdpGjNx8jRAje_OLQbb6uGdEqPWakaFAXXGwRPzRoGtORg0fihG9sw62A-oBReePsqDOaZ_8K088xxfHrwniuf1L3PGkLNFoP16pwOcxf7Qde_Py-kbcVCS7bkFiUJYpeTaDqNZDhsay_3MHnPOaJqk5fG-RaXGOPPm7dJh0QklEkjv9t-SMoU_5EUBx9Ljpq5GLdjDP2p4J8Yu1_Y7mAb0OgqIs3FU"/>
+</div>
+<div>
+<p class="font-bold text-navy">Cipher Edge</p>
+<p class="text-xs text-slate-500 font-bold uppercase tracking-tight">Security Tech</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-slate-200 py-20 px-6 bg-white">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16">
+<div class="col-span-1 md:col-span-2 space-y-8">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<svg class="w-full h-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-lg font-bold uppercase tracking-tight text-navy">Fieldhouse Studio</span>
+</div>
+<p class="text-slate-600 max-w-sm font-medium leading-relaxed">
+                    Leading the charge in AI development. We bridge the gap between speculative research and production-grade software.
+                </p>
+<div class="flex gap-4">
+<a class="size-11 rounded-full border border-slate-200 flex items-center justify-center text-slate-600 hover:text-white hover:bg-primary hover:border-primary transition-all shadow-sm" href="#">
+<svg class="size-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a class="size-11 rounded-full border border-slate-200 flex items-center justify-center text-slate-600 hover:text-white hover:bg-primary hover:border-primary transition-all shadow-sm" href="#">
+<svg class="size-5 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-navy mb-8">Services</h4>
+<ul class="space-y-4 text-sm font-semibold text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">Machine Learning</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Generative AI</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">LLM Fine-tuning</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Data Strategy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-navy mb-8">Contact</h4>
+<ul class="space-y-4 text-sm font-semibold text-slate-500">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">mail</span> hello@fieldhouse.studio</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">location_on</span> San Francisco, CA</li>
+<li class="pt-2"><button class="text-primary font-bold hover:underline">Book a Consultation</button></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-24 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between gap-6 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">
+<p>© 2024 Fieldhouse Studio. All Rights Reserved.</p>
+<div class="flex gap-10">
+<a class="hover:text-navy transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-navy transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

@@ -1,238 +1,85 @@
 'use client';
 
-import { useState } from 'react';
+import ContactForm from '../components/ContactForm';
+import BookingCalendar from '../components/BookingCalendar';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const ContactPage = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData);
-  };
-
   return (
-    <div className="min-h-screen pt-16">
-      {/* Hero Section */}
-      <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-              Get in Touch
-            </h1>
-            <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-              Have a question or want to discuss your project? We're here to help. Reach out to us through any of the following channels.
-            </p>
-          </div>
+    <div className="bg-background-light text-slate-900 min-h-screen">
+      <main className="max-w-[1280px] mx-auto px-6 lg:px-10 py-16">
+        <div className="mb-16">
+          <h1 className="text-4xl md:text-5xl font-black leading-tight tracking-tight mb-4 text-slate-900">Start Your AI Journey</h1>
+          <p className="text-slate-500 text-lg max-w-2xl">
+            Ready to transform your business with custom intelligence? Tell us about your project or book a direct technical session with our lead engineers.
+          </p>
         </div>
-      </div>
-
-      {/* Contact Information Section */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="text-indigo-600 mb-4">
-                <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-medium text-gray-900">Visit Us</h3>
-              <p className="mt-2 text-gray-500">
-                Fieldhouse Studio<br />
-                88-90 Hatton Garden<br />
-                Holborn<br />
-                London EC1N 8PG
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="text-indigo-600 mb-4">
-                <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-medium text-gray-900">Email Us</h3>
-              <p className="mt-2 text-gray-500">
-                info@fieldhousestudio.com<br />
-                fieldhousestudio@gmail.com
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="text-indigo-600 mb-4">
-                <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-medium text-gray-900">Call Us</h3>
-              <p className="mt-2 text-gray-500">
-                07802736163<br />
-                07582420060
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Map Section */}
-      <div className="bg-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6988539999997!2d-0.1097!3d51.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b4c0c0c0c0c%3A0x0!2zODgtOTAgSGF0dG9uIEdhcmRlbiwgSG9sYm9ybiwgTG9uZG9uIEVDMU4gOFBH!5e0!3m2!1sen!2suk!4v1647890123456!5m2!1sen!2suk"
-              width="100%"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="rounded-lg"
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* Contact Form Section */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-extrabold text-gray-900">
-                Send us a Message
-              </h2>
-              <p className="mt-4 text-lg text-gray-500">
-                Fill out the form below and we'll get back to you as soon as possible.
-              </p>
-            </div>
-
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    required
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="flex flex-col gap-8">
+            <ContactForm />
+            <div className="grid grid-cols-2 gap-4">
+              <div className="p-5 rounded-xl bg-slate-50 border border-slate-200">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="size-2 rounded-full bg-green-500"></div>
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-primary">Headquarters</span>
                 </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    required
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  />
+                <p className="font-bold text-slate-900">London, UK</p>
+                <p className="text-xs text-slate-500">128 City Road, EC1V 2NX</p>
+              </div>
+              <div className="p-5 rounded-xl bg-slate-50 border border-slate-200">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="size-2 rounded-full bg-green-500"></div>
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-primary">Contact</span>
                 </div>
+                <p className="font-bold text-slate-900 text-xs">info@fieldhousestudio.com</p>
               </div>
-
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                />
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
-                  Subject *
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  required
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                  value={formData.subject}
-                  onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                  Message *
-                </label>
-                <textarea
-                  id="message"
-                  required
-                  rows={6}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                />
-              </div>
-
-              <div>
-                <button
-                  type="submit"
-                  className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      {/* FAQ Section */}
-      <div className="bg-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900">
-              Frequently Asked Questions
-            </h2>
-            <p className="mt-4 text-lg text-gray-500">
-              Find answers to common questions about our services and process.
-            </p>
-          </div>
-
-          <div className="mt-12 space-y-8">
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-medium text-gray-900">What services do you offer?</h3>
-              <p className="mt-2 text-gray-500">
-                We offer a comprehensive range of digital services including web development, mobile app development, AR/VR solutions, UI/UX design, and more. Visit our services page for detailed information.
-              </p>
             </div>
-
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-medium text-gray-900">How long does a typical project take?</h3>
-              <p className="mt-2 text-gray-500">
-                Project timelines vary depending on the scope and complexity. We'll provide a detailed timeline during our initial consultation.
-              </p>
+            <div className="pt-4">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-6">Trusted by innovators at</p>
+              <div className="flex flex-wrap gap-10 grayscale opacity-40">
+                <div className="h-6 w-24 bg-slate-200 rounded flex items-center justify-center text-[10px] font-black text-slate-600">QUANTUM</div>
+                <div className="h-6 w-24 bg-slate-200 rounded flex items-center justify-center text-[10px] font-black text-slate-600">NEURALIX</div>
+                <div className="h-6 w-24 bg-slate-200 rounded flex items-center justify-center text-[10px] font-black text-slate-600">SYNTHETIC</div>
+              </div>
             </div>
-
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-medium text-gray-900">What is your pricing structure?</h3>
-              <p className="mt-2 text-gray-500">
-                We offer flexible pricing options to suit different project needs. Visit our pricing page for detailed information about our packages.
-              </p>
+          </div>
+          <div className="flex flex-col gap-8">
+            <BookingCalendar />
+            <div className="mt-auto border-t border-slate-200 pt-8">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">General Inquiries</p>
+              <a
+                className="text-lg font-bold text-slate-900 hover:text-primary transition-colors underline decoration-primary underline-offset-4 block"
+                href="mailto:info@fieldhousestudio.com"
+              >
+                info@fieldhousestudio.com
+              </a>
             </div>
           </div>
         </div>
-      </div>
+      </main>
+      <section className="max-w-[1280px] mx-auto px-6 lg:px-10 py-20">
+        <div className="relative h-[450px] w-full rounded-3xl overflow-hidden bg-slate-50 border border-slate-200">
+          <Image
+            className="w-full h-full object-cover opacity-10 mix-blend-multiply filter grayscale scale-110"
+            alt="Light styled world map outline"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSrhQYD5xxC-ykzVZkOHdtrUeM12UmfrlAayByDmlmO5ifNhrrJkxo4gtC4T7oA-GPAfKeRPnO9V9-yDRHhYrCPqOJefLK3rwge2pMPJyfZyKnW9OeiqlFBHfSl2k8uUzJZt9Lp2xDiWu8gIttEqaDitjqY3VhO_t-OuuIgXFNGpOmKj43Shv-R0SFFfORETE7-vdYFYdU0LTG1DOWyvSqh0jlIYtzt1i1laU41Jq8jF4H9nsQw0V1PSJhngSrdfQ_2PJUX1lLqGY"
+            fill
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent"></div>
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+            <div className="size-16 rounded-full bg-white shadow-xl shadow-slate-200/50 flex items-center justify-center mb-6">
+              <span className="material-symbols-outlined text-3xl text-primary">public</span>
+            </div>
+            <h2 className="text-2xl font-black text-slate-900 mb-2">Global Engineering Presence</h2>
+            <p className="text-slate-500 max-w-sm">Specialized AI teams operating across 4 continents to deliver round-the-clock innovation.</p>
+            <div className="mt-8 flex gap-3">
+              <span className="px-4 py-2 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600 shadow-sm">London, UK</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
